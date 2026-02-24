@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Static Resources">
+      <lightning-button label="Show Images" variant="brand" onclick={showImages}></lightning-button>
+      <br>
+      <lightning-button label="Hide Images" variant="destructive" onclick={hideImage}></lightning-button>
+      <br>
+      <template if:true={isVisible}>
+        <img src={FLMImage} alt="Flm Image" height="200" width="200">
+        <br>
+        <br>
+        <img src={FLMLogo} alt="FLM Logo" height="200" width="200">
+        <br>
+        <br>
+        <img src={SFDCLogo} alt="Salesforce Logo" height="200" width="200">
+
+      </template>
+
+      <template if:false={isVisible}>
+
+        <p>All the Images are Hidden.</p>
+
+      </template>
+        
+    </lightning-card>
+    
+</template>

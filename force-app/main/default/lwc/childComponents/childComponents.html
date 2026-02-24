@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <lightning-button label="Show Image" onclick={handleClick}></lightning-button>
+        <template if:true={showImage}>
+            <img src={image} alt="SFDC Image">
+        </template>
+    </lightning-card>
+    
+</template>

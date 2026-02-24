@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Todays Cases">
+
+        <template for:each={cases.data} for:item="cd">
+
+            <div key={cd.Id}>
+                <p class="slds-m-left_large">The Case Id is   : {cd.Id}</p>
+                <p class="slds-m-left_large">The Case Created Date is : {cd.CreatedDate}</p>
+                <p class="slds-m-left_large">The Case Priority is : {cd.Priority}</p>
+                <p class="slds-m-left_large">The Case Status is : {cd.Status}</p>
+                <p class="slds-m-left_large">The Case Origin is : {cd.Origin}</p>
+                <br>
+                <br>
+
+            </div>
+
+        </template>
+
+
+
+    </lightning-card>
+    
+</template>

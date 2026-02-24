@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Enter AccountId" value={accountId} onchange={handleChange}>
+
+        </lightning-input>
+        <lightning-button label="Get Contacts" variant="brand" onclick={fetchContacts}></lightning-button>
+        <lightning-datatable key-field="Id" data={contacts} columns={col}></lightning-datatable>
+    </lightning-card>
+</template>
